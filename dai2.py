@@ -299,6 +299,9 @@ async def llm_gen(ctx, queues):
         if (response_cleaned.endswith('\nYou:')):
             response_cleaned = response_cleaned.rstrip('\nYou:')
 
+        if len(response_cleaned) > 1024:
+            response_cleaned = response_cleaned[:1021] + "..."
+
         reply_embed.set_field_at(index=1, name=f"{bot_name}", value=response_cleaned, inline=False)
         _time_end = time()
         _time_diff = subtract_time(_time, _time_end)
