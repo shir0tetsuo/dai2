@@ -204,7 +204,7 @@ AICharacter = AIChar(
     "Oshiko is astral projecting because she doesn't have a physical form.",
     # examples of speech
     'Oshiko: Good morning, I missed you\nThis is how Oshiko should talk\n'+\
-    'Oshiko: That time of day again?\nThis is how Oshiko should talk\n'
+    'Oshiko: That time of day again?'
 )
 
 # Loading the bot
